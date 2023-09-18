@@ -69,13 +69,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[](Checkout the live site here!)
+[Checkout the live site here!]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Project Presentation <a name="Presentation"></a>
 
-[](Loom Video presentation)
+[Loom Video presentation]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +155,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/gisachris/budget_builder/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -170,7 +170,7 @@ If you like this project consider leaving a star in the repo.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-Original design idea by [https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=]( Gregoire Vella on Behance.)
+Original design idea by [ Gregoire Vella on Behance.](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
