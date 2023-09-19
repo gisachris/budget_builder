@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'users/index'
+  root 'static_pages#splash'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  devise_for :users
+  resources :users do
+    resources :categories, except: [:destroy]
+    resources :deals
+  end
 end
