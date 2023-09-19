@@ -1,0 +1,155 @@
+@media screen and (max-width: 767px) {
+  .auth_holder {
+    width: 100%;
+    height: 100%;
+  }
+
+  .auth_header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100px;
+    border: 0;
+    border-bottom: 2px solid #3778c2;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .field > input {
+    width: 250px;
+    height: 30px;
+    box-shadow: 2px 2px 3px grey;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  .field > label {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .field_pass > em {
+    font-size: 0.8rem;
+  }
+
+  .field_check {
+    font-size: 0.7rem;
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link_holder {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .link_holder a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+    align-self: center;
+  }
+
+  .link_holder a:hover {
+    color: rgb(90, 90, 90);
+    border: 0;
+    border-bottom: 2px solid black;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .auth_holder {
+    width: 100%;
+    height: 100%;
+  }
+
+  .auth_header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100px;
+    border: 0;
+    border-bottom: 2px solid #3778c2;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .field > input {
+    width: 250px;
+    height: 30px;
+    box-shadow: 2px 2px 3px grey;
+    border: 0;
+    border-radius: 3px;
+  }
+
+  .field > label {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .field_pass > em {
+    font-size: 0.8rem;
+  }
+
+  .field_check {
+    font-size: 0.7rem;
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link_holder {
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 0.7rem;
+    display: flex;
+    column-gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .link_holder a {
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .link_holder a:hover {
+    color: rgb(90, 90, 90);
+    border: 0;
+    border-bottom: 2px solid black;
+  }
+}
