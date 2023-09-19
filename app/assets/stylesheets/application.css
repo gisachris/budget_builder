@@ -75,7 +75,15 @@
   }
 
   .notifications {
-    position: absolute;
+    width: 100%;
+  }
+
+  .notice {
+    font-size: 0.7rem;
+  }
+
+  .alert {
+    font-size: 0.7rem;
   }
 
   .button {

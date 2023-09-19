@@ -1,14 +1,10 @@
-<% if user_signed_in? %>
-  <% redirect_to users_path %>
-<% else %>
-  <div class='static_holder'>
-    <section class='logo_image_section'>
-      <%= image_tag 'logo_outside', class: 'logo_outside' %>
-    </section>
-    <section class='static_link_section'>
-      <%= link_to 'Login', new_user_session_path, class:'static_login_link'%>
+<div class='static_holder'>
+  <section class='logo_image_section'>
+    <%= image_tag 'logo_outside', class: 'logo_outside' %>
+  </section>
+  <section class='static_link_section'>
+    <%= link_to 'Login', new_user_session_path, class:'static_login_link'%>
 
-      <%= link_to 'SignUp', new_user_registration_path, class:'static_signup_link'%>
-    </section>
-  </div>
-<% end %>
+    <%= link_to 'SignUp', new_user_registration_path, class:'static_signup_link'%>
+  </section>
+</div>

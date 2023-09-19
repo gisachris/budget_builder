@@ -54,6 +54,7 @@
     color: white;
     font-size: 1rem;
     background-color: #3778c2;
+    transition: all 0.3s;
   }
 
   .static_login_link:hover {
@@ -114,5 +115,11 @@
     color: white;
     font-size: 1.2rem;
     background-color: #3778c2;
+    transition: all 0.3s;
+  }
+
+  .static_login_link:hover {
+    background-color: #0f3d72;
+    font-weight: bold;
   }
 }
