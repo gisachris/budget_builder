@@ -11,16 +11,17 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "landing.css" %>
     <%= stylesheet_link_tag "authentication.css" %>
+    <%= stylesheet_link_tag "header.css" %>
+    <%= stylesheet_link_tag "category.css" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <header></header>
     <main class='inner_container'>
-    <span class='notifications'>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    </span>
+      <span class='notifications'>
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+      </span>
       <%= yield %>
     </main>
   </body>

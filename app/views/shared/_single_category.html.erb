@@ -1,0 +1,9 @@
+<div class='single_category'>
+  <%= link_to user_category_path(user, category) do %>
+    <div class='category_icon_holder'>
+      <%= image_tag(category.icon, class: 'category_icon') %>
+    </div>
+    <span class='category_name'><%= category.name %></span>
+    <span class='category_total_price'>$0.00</span>
+  <% end %>
+</div>

@@ -16,6 +16,18 @@
     margin-top: 70px;
   }
 
+  .long_auth_header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+    border: 0;
+    border-bottom: 2px solid #3778c2;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
   form {
     width: 60%;
     margin: 0 auto;
@@ -87,6 +99,18 @@
     font-size: 1.3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100px;
+    border: 0;
+    border-bottom: 2px solid #3778c2;
+    padding: 0 10px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+
+  .long_auth_header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
     border: 0;
     border-bottom: 2px solid #3778c2;
     padding: 0 10px;

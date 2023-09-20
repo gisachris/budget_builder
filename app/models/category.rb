@@ -1,7 +1,8 @@
 class Category < ApplicationRecord
-  has_many :category_deals
-  has_many :deals, through: :category_deals
+  belongs_to :author, class_name: 'User'
+  has_many :category_deals, dependent: :destroy
+  has_many :deals, through: :category_deals, dependent: :destroy
+  has_one_attached :icon, dependent: :destroy
 
   validates :name, presence: true
-  validates :icon, presence: true
 end
