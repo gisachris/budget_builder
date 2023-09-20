@@ -1,0 +1,32 @@
+<div class='auth_holder'>
+  <div class='header_section'>
+    <span class='left_action'>
+      <%= link_to user_categories_path(@user), class:'back_button_link' do%>
+        <%= image_tag 'icons8_back_left', class:'back_button_icon' %>
+      <% end %>
+    </span>
+    <span class='header_header'>
+      CATEGORIES
+    </span>
+    <span class='right_action'>
+      <%= image_tag 'icons8_search', class: 'search_icon' %>
+    </span>
+  </div>
+  <h2 class='long_auth_header'>Create Category</h2>
+
+  <%= form_for @category, url:user_categories_path(@user) do |form| %>
+    <div class="field">
+      <%= form.label :name %><br />
+      <%= form.text_field :name, autofocus: true %>
+    </div>
+
+    <div class="file_field">
+      <%= form.label :icon %><br />
+      <%= form.file_field :icon %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit "Create Category", class: 'long_button' %>
+    </div>
+  <% end %>
+</div>

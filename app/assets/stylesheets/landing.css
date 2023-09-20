@@ -1,0 +1,125 @@
+@media screen and (max-width: 767px) {
+  .static_holder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .logo_image_section {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    padding-right: 30px;
+  }
+
+  .logo_outside {
+    width: 70%;
+  }
+
+  .static_link_section {
+    box-sizing: border-box;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+  }
+
+  .static_signup_link {
+    align-self: center;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 3px;
+    color: #555;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+
+  .static_login_link {
+    align-self: center;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 1rem;
+    background-color: #3778c2;
+    transition: all 0.3s;
+  }
+
+  .static_login_link:hover {
+    background-color: #0f3d72;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .static_holder {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .logo_image_section {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo_outside {
+    width: 60%;
+  }
+
+  .static_link_section {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .static_signup_link {
+    align-self: center;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 3px;
+    color: #555;
+    font-size: 1.2rem;
+    background-color: transparent;
+  }
+
+  .static_login_link {
+    align-self: center;
+    width: 25%;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 20px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #3778c2;
+    transition: all 0.3s;
+  }
+
+  .static_login_link:hover {
+    background-color: #0f3d72;
+    font-weight: bold;
+  }
+}

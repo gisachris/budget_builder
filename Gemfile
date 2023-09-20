@@ -70,4 +70,7 @@ group :test do
   gem 'selenium-webdriver'
 end
 
+gem 'devise'
+gem 'dotenv-rails', groups: %i[development test]
+gem 'letter_opener', groups: :development
 gem 'rubocop', '>= 1.0', '< 2.0'

@@ -1,0 +1,100 @@
+@media screen and (max-width: 767px) {
+  .category_index_holder {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .header_section {
+    width: 100%;
+    min-height: 10vh;
+    height: 15%;
+    background-color: #3778c2;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .left_action {
+    width: 30%;
+    display: flex;
+    align-items: center;
+  }
+
+  .back_button_link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .left_action > img {
+    width: 15%;
+  }
+
+  .back_button_link > .back_button_icon {
+    width: 30%;
+  }
+
+  .header_header {
+    width: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    align-self: center;
+  }
+
+  .right_action {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+  }
+
+  .log_out_link {
+    font-size: 0.9rem;
+    color: white;
+    text-align: end;
+    text-decoration: none;
+  }
+
+  .right_action > img {
+    width: 15%;
+  }
+
+  .content {
+    width: 100%;
+    min-height: 75vh;
+    height: 80%;
+  }
+
+  .flat_button_holder {
+    width: 100%;
+    min-height: 15vh;
+    height: 15%;
+    background-color: #5fb523;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flat_button {
+    cursor: pointer;
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid white;
+    padding: 16px 20px;
+    background-color: #5fb523;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-align: center;
+  }
+}
