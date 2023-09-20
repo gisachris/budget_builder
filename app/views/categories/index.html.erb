@@ -7,13 +7,14 @@
     CATEGORIES
     </span>
     <span class='right_action'>
-      <%= image_tag 'icons8_search', class: 'search_icon' %>
+      <%= link_to 'Signout', destroy_user_session_path, class:'log_out_link'%>
     </span>
   </div>
   <div class='content'>
-  <% @categories.each do  |category|%>
-    <%= render partial:'shared/single_category', locals: {category: category, user: @user}%>
-  <% end %>
+    <% @categories.each do  |category|%>
+      <% @total = category.deals.sum(:amount) %>
+      <%= render partial:'shared/single_category', locals: {category: category, user: @user, total: @total}%>
+    <% end %>
   </div>
   <div class='flat_button_holder'>
     <%= link_to 'ADD CATEGORY', new_user_category_path(@user), class: 'flat_button' %>

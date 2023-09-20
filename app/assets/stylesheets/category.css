@@ -1,14 +1,19 @@
 @media screen and (max-width: 767px) {
   .content {
-    padding-top: 20px; 
+    padding-top: 20px;
     width: 100%;
+  }
+
+  .content_v2 {
+    width: 100%;
+    min-height: 75vh;
   }
 
   .single_category {
     width: 90%;
     height: 100px;
     margin: 0 auto;
-    border: 0px;
+    border: 0;
     box-shadow: 2px 2px 5px rgb(105, 105, 105);
     background-color: white;
     padding-left: 10px;
@@ -45,10 +50,61 @@
   .category_total_price {
     width: 20%;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .content {
-  
+  .category_info_short {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .cat_short_image_holder {
+    width: 20%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  .cat_short_image {
+    height: 90%;
+    width: 100%;
+  }
+
+  .cat_short_name {
+    width: 50%;
+    color: rgb(150, 150, 150);
+  }
+
+  .cat_short_total {
+    width: 30%;
+    font-weight: bolder;
+  }
+
+  .selection_field {
+    width: 100%;
+    display: flex;
+    column-gap: 15px;
+  }
+
+  .selection_field > select {
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 2px 3px grey;
+    border: 0;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .selection_field > label {
+    font-size: 0.78rem;
+    font-weight: bold;
   }
 }

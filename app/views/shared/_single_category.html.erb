@@ -4,6 +4,8 @@
       <%= image_tag(category.icon, class: 'category_icon') %>
     </div>
     <span class='category_name'><%= category.name %></span>
-    <span class='category_total_price'>$0.00</span>
+    <span class='category_total_price'>
+      $<%= total %>
+    </span>
   <% end %>
 </div>

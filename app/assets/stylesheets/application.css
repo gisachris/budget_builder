@@ -8,7 +8,6 @@
     min-height: 100vh;
     box-sizing: border-box;
     background-color: #ddd;
-    overflow-x: clip;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.1rem;
   }
@@ -64,7 +63,6 @@
 
   .long_button {
     cursor: pointer;
-    width: 200px;
     text-decoration: none;
     text-align: center;
     padding: 10px 15px;
@@ -139,7 +137,6 @@
 
   .long_button {
     cursor: pointer;
-    width: 200px;
     text-decoration: none;
     text-align: center;
     padding: 10px 15px;

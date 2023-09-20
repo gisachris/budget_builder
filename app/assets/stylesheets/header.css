@@ -26,8 +26,19 @@
     align-items: center;
   }
 
+  .back_button_link {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
   .left_action > img {
     width: 15%;
+  }
+
+  .back_button_link > .back_button_icon {
+    width: 30%;
   }
 
   .header_header {
@@ -45,6 +56,13 @@
     justify-content: end;
     align-items: center;
     padding-right: 10px;
+  }
+
+  .log_out_link {
+    font-size: 0.9rem;
+    color: white;
+    text-align: end;
+    text-decoration: none;
   }
 
   .right_action > img {
@@ -81,4 +99,3 @@
   }
 }
 
-@media screen and (min-width: 768px) {}

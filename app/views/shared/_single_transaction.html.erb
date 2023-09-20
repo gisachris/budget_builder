@@ -1,0 +1,15 @@
+<div class='single_deal'>
+  <%= link_to user_deal_path(user, deal) do %>
+    <section class='deal_text_info'>
+      <span class='deal_name'>
+        <%= deal.name %>
+      </span>
+      <span class='deal_creation_time'>
+        <%= deal.created_at%>
+      </span>
+    </section>
+    <span class='deal_amount'>
+      $<%=deal.amount%>
+    </span>
+  <% end %>
+</div>
