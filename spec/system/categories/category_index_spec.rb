@@ -8,17 +8,19 @@ RSpec.describe 'Category Index Page Testing', type: :system do
       name: 'gisachris',
       email: 'gisa@mymail.com',
       password: 'abcxyz123',
-      password_confirmation: 'abcxyz123')
+      password_confirmation: 'abcxyz123'
+    )
 
     # Confirm the user's email
     @user.confirm
-    
+
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
+      author: @user
+    )
 
-    @icon_path = Rails.root.join('app','assets','images','test_image.jpg')
-    
+    @icon_path = Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
+
     @category.icon.attach(io: File.open(@icon_path), filename: 'test_image.jpg')
   end
 
@@ -51,7 +53,7 @@ RSpec.describe 'Category Index Page Testing', type: :system do
       within('.single_category') do
         click_link(@category.name)
       end
-      expect(page).to have_current_path(user_category_path(@user,@category))
+      expect(page).to have_current_path(user_category_path(@user, @category))
     end
 
     it 'should navigate to new category page when add category button is clicked' do

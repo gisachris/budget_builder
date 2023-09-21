@@ -16,10 +16,11 @@ RSpec.describe 'Edit Deal Page Testing', type: :system do
 
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
+      author: @user
+    )
 
-    @icon_path = Rails.root.join('app','assets','images','test_image.jpg')
-    
+    @icon_path = Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
+
     @category.icon.attach(io: File.open(@icon_path), filename: 'test_image.jpg')
 
     # Create a deal

@@ -6,16 +6,19 @@ RSpec.describe 'Category Deals Joint Tables Testing' do
       name: 'gisachris',
       email: 'gisa@mymail.com',
       password: 'abcxyz123',
-      password_confirmation: 'abcxyz123')
-    
+      password_confirmation: 'abcxyz123'
+    )
+
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
-    
+      author: @user
+    )
+
     @deal = Deal.create!(
       name: 'clothes',
       amount: 300,
-      author: @user)
+      author: @user
+    )
 
     @category_deal = CategoryDeal.create!(
       category: @category,

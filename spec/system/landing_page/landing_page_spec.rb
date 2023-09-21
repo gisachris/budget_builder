@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Landing page testing', type: :system do
-
   describe 'Testing page components' do
     before(:each) do
       visit root_path
@@ -19,10 +18,10 @@ RSpec.describe 'Landing page testing', type: :system do
     it 'should have a login button' do
       expect(page).to have_content('Login')
     end
-    
+
     it 'should have a signup button' do
       expect(page).to have_content('SignUp')
-    end    
+    end
   end
 
   describe 'Testing page interactions' do
@@ -35,10 +34,10 @@ RSpec.describe 'Landing page testing', type: :system do
       click_on('Login')
       expect(page).to have_current_path(new_user_session_path)
     end
-    
+
     it 'should go to signup page on click of signup page' do
       click_on('SignUp')
       expect(page).to have_current_path(new_user_registration_path)
-    end    
+    end
   end
 end

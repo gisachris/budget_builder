@@ -8,17 +8,19 @@ RSpec.describe 'Category Show Page Testing', type: :system do
       name: 'gisachris',
       email: 'gisa@mymail.com',
       password: 'abcxyz123',
-      password_confirmation: 'abcxyz123')
+      password_confirmation: 'abcxyz123'
+    )
 
     # Confirm the user's email
     @user.confirm
-    
+
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
+      author: @user
+    )
 
-    @icon_path = Rails.root.join('app','assets','images','test_image.jpg')
-    
+    @icon_path = Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
+
     @category.icon.attach(io: File.open(@icon_path), filename: 'test_image.jpg')
 
     @deal = Deal.create!(
@@ -36,7 +38,7 @@ RSpec.describe 'Category Show Page Testing', type: :system do
   describe 'page components' do
     before(:each) do
       sign_in @user
-      visit user_category_path(@user,@category)
+      visit user_category_path(@user, @category)
     end
 
     it 'should have the category name' do
@@ -55,12 +57,12 @@ RSpec.describe 'Category Show Page Testing', type: :system do
   describe 'page interactions' do
     before(:each) do
       sign_in @user
-      visit user_category_path(@user,@category)
+      visit user_category_path(@user, @category)
     end
 
     it 'should navigate to a transaction details page on transaction click' do
       click_on(@deal.name)
-      expect(page).to have_current_path(user_deal_path(@user,@deal))
+      expect(page).to have_current_path(user_deal_path(@user, @deal))
     end
 
     it 'Should navigate to the add new transactions page on click' do

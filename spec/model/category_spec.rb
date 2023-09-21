@@ -6,11 +6,13 @@ RSpec.describe 'Category Model Testing', type: :model do
       name: 'gisachris',
       email: 'gisa@mymail.com',
       password: 'abcxyz123',
-      password_confirmation: 'abcxyz123')
+      password_confirmation: 'abcxyz123'
+    )
 
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
+      author: @user
+    )
   end
 
   after(:each) do

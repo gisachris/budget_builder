@@ -16,10 +16,11 @@ RSpec.describe 'New Deal Form Page Testing', type: :system do
 
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
+      author: @user
+    )
 
-    @icon_path = Rails.root.join('app','assets','images','test_image.jpg')
-    
+    @icon_path = Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
+
     @category.icon.attach(io: File.open(@icon_path), filename: 'test_image.jpg')
   end
 
@@ -48,7 +49,7 @@ RSpec.describe 'New Deal Form Page Testing', type: :system do
 
       sleep 2
 
-      expect(page).to have_current_path(user_category_path(@user,@category))
+      expect(page).to have_current_path(user_category_path(@user, @category))
     end
   end
 end

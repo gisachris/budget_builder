@@ -16,10 +16,11 @@ RSpec.describe 'Deals Show Page Testing', type: :system do
 
     @category = Category.create!(
       name: 'groceries',
-      author: @user)
+      author: @user
+    )
 
-    @icon_path = Rails.root.join('app','assets','images','test_image.jpg')
-    
+    @icon_path = Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
+
     @category.icon.attach(io: File.open(@icon_path), filename: 'test_image.jpg')
 
     @deal = Deal.create!(
@@ -37,7 +38,7 @@ RSpec.describe 'Deals Show Page Testing', type: :system do
   describe 'page components' do
     before(:each) do
       sign_in @user
-      visit user_deal_path(@user,@deal)
+      visit user_deal_path(@user, @deal)
     end
 
     it 'should see the deal name' do
@@ -60,13 +61,13 @@ RSpec.describe 'Deals Show Page Testing', type: :system do
   describe 'page Interactions' do
     before(:each) do
       sign_in @user
-      visit user_deal_path(@user,@deal)
+      visit user_deal_path(@user, @deal)
     end
 
     it 'should navigate to the edit deal page on click' do
       click_on('edit')
 
-      expect(page).to have_current_path(edit_user_deal_path(@user,@deal))
+      expect(page).to have_current_path(edit_user_deal_path(@user, @deal))
     end
   end
 end

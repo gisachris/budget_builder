@@ -6,8 +6,9 @@ RSpec.describe 'Deal Model Testing' do
       name: 'gisachris',
       email: 'gisa@mymail.com',
       password: 'abcxyz123',
-      password_confirmation: 'abcxyz123')
-    
+      password_confirmation: 'abcxyz123'
+    )
+
     @deal = Deal.create!(
       name: 'clothes',
       amount: 300,

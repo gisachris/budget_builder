@@ -24,4 +24,5 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
       config.server_host = 'localhost'
       config.server_port = '3000'
     end
+  end
 end

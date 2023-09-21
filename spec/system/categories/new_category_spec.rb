@@ -23,7 +23,7 @@ RSpec.describe 'New Category Form Page Testing', type: :system do
 
     it 'allows user to create a new category' do
       fill_in 'category[name]', with: 'Test Category'
-      attach_file 'category[icon]', Rails.root.join('app','assets','images','test_image.jpg')
+      attach_file 'category[icon]', Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
       click_button 'Create Category'
 
       sleep 5
@@ -33,7 +33,7 @@ RSpec.describe 'New Category Form Page Testing', type: :system do
 
     it 'page return to categories index page after succesful creation of a category' do
       fill_in 'category[name]', with: 'Test Category'
-      attach_file 'category[icon]', Rails.root.join('app','assets','images','test_image.jpg')
+      attach_file 'category[icon]', Rails.root.join('app', 'assets', 'images', 'test_image.jpg')
       click_button 'Create Category'
 
       sleep 2
