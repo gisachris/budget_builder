@@ -69,13 +69,13 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Checkout the live site here!]()
+[Checkout the live site here!](https://budgetbuilder.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Project Presentation <a name="Presentation"></a>
 
-[Loom Video presentation]()
+[Loom Video presentation](https://www.loom.com/share/7a2825bc026c41bc97606cb0aca1cf23?sid=70c3369b-08e8-4c34-adaf-1023cf391dfd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
