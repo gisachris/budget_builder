@@ -1,0 +1,36 @@
+<div class='category_show_holder'>
+  <div class='header_section'>
+    <span class='left_action'>
+      <%= link_to user_categories_path(@user), class:'back_button_link' do%>
+        <%= image_tag 'icons8_back_left', class:'back_button_icon' %>
+      <% end %>
+    </span>
+    <span class='header_header'>
+      CATEGORIES
+    </span>
+    <span class='right_action'>
+      <%= image_tag 'icons8_search', class: 'search_icon' %>
+    </span>
+  </div>
+  <div class='content_v2'>
+    <div class='category_info_short'>
+      <span class='cat_short_image_holder'>
+        <%= image_tag(@category.icon, class:'cat_short_image') %>
+      </span>
+      <span class='cat_short_name'>
+        <%= @category.name %>
+      </span>
+      <span class='cat_short_total'>
+        $<%= @total %>
+      </span>
+    </div>
+    <div class='deals_section'>
+      <% @deals.each do |deal| %>
+        <%= render partial:'shared/single_transaction', locals: {deal: deal, user: @user}%>
+      <% end %>
+    </div>
+  </div>
+  <div class='flat_button_holder'>
+    <%= link_to 'ADD TRANSACTION', new_user_deal_path(@user), class: 'flat_button' %>
+  </div>
+</div>

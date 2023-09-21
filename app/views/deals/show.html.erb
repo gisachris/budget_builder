@@ -1,0 +1,60 @@
+<div class='deals_show_holder'>
+  <div class='header_section'>
+    <span class='left_action'>
+      <%= link_to user_category_path(@user,@category), class:'back_button_link' do%>
+        <%= image_tag 'icons8_back_left', class:'back_button_icon' %>
+      <% end %>
+    </span>
+    <span class='header_header'>
+      DEALS
+    </span>
+    <span class='right_action'>
+      <%= image_tag 'icons8_search', class: 'search_icon' %>
+    </span>
+  </div>
+
+  <div class='single_deal_details'>
+    <span class='deal_title'>
+      <%= @deal.name %>
+    </span>
+
+    <section class='deals_detail_info'>
+      <div class='deal_info_piece_holder'>
+        <span class='info_detail_label'>
+          Name:
+        </span>
+        <span class='info_detail_info'>
+          <%= @deal.name%>
+        </span>
+      </div>
+      <div class='deal_info_piece_holder'>
+        <span class='info_detail_label'>
+          Amount:
+        </span>
+        <span class='info_detail_info'>
+          $<%= @deal.amount%>
+        </span>
+      </div>
+      <div class='deal_info_piece_holder'>
+        <span class='info_detail_label'>
+          Category:
+        </span>
+        <span class='info_detail_info'>
+          <%= @category.name%>
+        </span>
+      </div>
+      <div class='deal_info_piece_holder'>
+        <span class='info_detail_label'>
+          created_at:
+        </span>
+        <span class='info_detail_info create_at_info'>
+          <%= @deal.created_at%>
+        </span>
+      </div>
+    </section>
+
+    <div class='edit_actions'>
+      <%= link_to 'edit', edit_user_deal_path(@user,@deal), class: 'edit_button'%>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,137 @@
+@media screen and (max-width: 767px) {
+  .deals_section {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .single_deal {
+    background-color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 10px 10px 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 5px grey;
+    margin-bottom: 15px;
+  }
+
+  .single_deal > a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    width: 100%;
+  }
+
+  .deal_text_info {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 10px 10px;
+  }
+
+  .deal_name {
+    width: 100%;
+    text-align: start;
+    font-size: 1rem;
+  }
+
+  .deal_creation_time {
+    width: 100%;
+    text-align: start;
+    font-size: 0.7rem;
+    color: grey;
+  }
+
+  .deal_amount {
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  .deals_show_holder {
+    width: 100%;
+  }
+
+  .single_deal_details {
+    margin: 0 auto;
+    width: 90%;
+    background-color: white;
+    min-height: 40vh;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+  }
+
+  .deal_title {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    border: 0;
+    border-bottom: 1.5px solid black;
+    padding-top: 10px;
+  }
+
+  .deals_detail_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    padding-top: 45px;
+  }
+
+  .deal_info_piece_holder {
+    border-bottom: 2px solid #a8a8a8;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .info_detail_label {
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  .info_detail_info {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+  }
+
+  .create_at_info {
+    font-size: 0.5rem;
+  }
+
+  .edit_actions {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .edit_button {
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.9rem;
+    background-color: #5fb523;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s;
+  }
+}
